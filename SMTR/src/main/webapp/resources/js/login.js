@@ -76,7 +76,7 @@ $(document).ready(function(){
 	});
 	/** 로그인 입력 버튼 클릭 **/
 	$(document).on("click", "#loginBtn", function(){
-		
+		alert("aa");
 		let email = $("#email").val();
 		let password = $("#password").val();
 		let data1 = {"email":email, "password":password};

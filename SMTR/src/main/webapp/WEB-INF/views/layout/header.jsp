@@ -89,7 +89,9 @@
           </li>
         </ul>
        <div class="loginDiv">
-       		<button class="loginBtn" type="button" onclick="location.href='${pageContext.request.contextPath}/login/loginForm'"><img class="btnImg" src="${pageContext.request.contextPath }/resources/images/loginBtn.png"></button>
+			<%-- <button class="loginBtn" type="button" onclick="location.href='${pageContext.request.contextPath}/member/myPage'"><img class="btnImg" src="${pageContext.request.contextPath }/resources/images/loginChef.png"></button>
+			<button class="loginBtn" type="button" onclick="location.href='${pageContext.request.contextPath}/logout/logout'"><img class="btnImg" src="${pageContext.request.contextPath }/resources/images/logoutBtn.png"></button> --%>
+			<button class="loginBtn" type="button" onclick="location.href='${pageContext.request.contextPath}/login/loginForm'"><img class="btnImg" src="${pageContext.request.contextPath }/resources/images/loginBtn.png"></button>		
        </div>      
       </div>
 

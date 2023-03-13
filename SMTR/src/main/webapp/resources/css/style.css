@@ -363,6 +363,18 @@ mark {
 	width: 80px;
 	height: 80px;
 }
+.logoutBtn {
+	background:none;
+	border: none;
+	width: 80px;
+	height: 80px;
+}
+.myPageBtn {
+	background:none;
+	border: none;
+	width: 80px;
+	height: 80px;
+}
 .btnImg {
 	width: 150px;
 }

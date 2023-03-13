@@ -39,19 +39,19 @@ public class LoginController {
 //		return mvo1;
 //	}
 //	
-//	@RequestMapping("/login/join")
-//	@ResponseBody
-//	public void join(@RequestBody MemberVO mvo){
-//		int no = memberService.join(mvo);
-//	}
-//	
-//	@RequestMapping
-//public String logout(HttpSession session) {
-//		
-//		session.removeAttribute("login");
-//		
-//		return "redirect:/";
-//	}
+	@RequestMapping("/login/join")
+	@ResponseBody
+	public void join(@RequestBody MemberVO mvo){
+		int no = memberService.join(mvo);
+	}
+	
+	@RequestMapping
+	public String logout(HttpSession session) {
+		
+		session.removeAttribute("login");
+		
+		return "redirect:/smtr";
+	}
 	
 	
 }

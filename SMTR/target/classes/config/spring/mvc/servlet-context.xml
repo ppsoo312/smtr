@@ -39,14 +39,14 @@
 	<beans:bean id="memberService" class="com.sy.member.MemberServiceImpl"/>
 	<beans:bean id="memberDao" class="com.sy.member.MemberDAOImpl"/>
 	
-    <!-- <mvc:interceptors>
+    <mvc:interceptors>
         <mvc:interceptor>
             <mvc:mapping path="/**/*" />
 
-            <beans:bean class="com.board.controller.LoginInterceptor">
+            <beans:bean class="com.sy.interceptor.LoginInterceptor">
             </beans:bean>
         </mvc:interceptor>
-    </mvc:interceptors>  -->
+    </mvc:interceptors>
 	
 	
 	
