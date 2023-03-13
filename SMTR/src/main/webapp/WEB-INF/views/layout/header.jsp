@@ -1,4 +1,4 @@
-
+<%@ page language="java" contentType="text/html; charset=UTF-8"%>
 <!-- navigation -->
 <header class="navigation fixed-top">
   <div class="container">
@@ -12,7 +12,7 @@
           <li class="nav-item dropdown">
             <a class="nav-link" href="#" role="button" data-toggle="dropdown" aria-haspopup="true"
               aria-expanded="false">
-              homepage <i class="ti-angle-down ml-1"></i>
+              	레시피 찾기 <i class="ti-angle-down ml-1"></i>
             </a>
             <div class="dropdown-menu">
               <a class="dropdown-item" href="index-full.html">Homepage Full Width</a>

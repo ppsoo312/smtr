@@ -1,9 +1,8 @@
 
 $(document).ready(function(){
-	alert("Aa");
+
 	/** 카카오, 홈페이지, 네이버 회원가입 로그인 관련 버튼 클릭 시 **/
 	$(document).on("click", "button[name=loginSelect]", function(){
-		alert("Aa");
 		
 		let loginForm = $(".loginForm");
 		// 카카오 로그인 클릭
