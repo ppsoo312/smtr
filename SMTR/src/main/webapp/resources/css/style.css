@@ -357,6 +357,12 @@ mark {
 	position: relative;
     top: 50px;
 }
+.loginFormBtn {
+	background:none;
+	border: none;
+	width: 80px;
+	height: 80px;
+}
 .loginBtn {
 	background:none;
 	border: none;
@@ -374,6 +380,9 @@ mark {
 	border: none;
 	width: 80px;
 	height: 80px;
+}
+.btnImg1 {
+	width: 80px;
 }
 .btnImg {
 	width: 150px;

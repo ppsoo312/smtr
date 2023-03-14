@@ -31,7 +31,8 @@ $(document).ready(function(){
 			
 			loginForm.kendoDialog({
 				width: "1000px",
-				height: "100%",
+				height: "60%",
+				scrollable: true,
 				title: "HomePageLogin",
 				closable: true,
 				modal: true,
@@ -65,7 +66,7 @@ $(document).ready(function(){
 			
 			loginForm.kendoDialog({
 				width: "1000px",
-				height: "100%",
+				height: "60%",
 				title: "회원가입",
 				closable: true,
 				modal: true,
@@ -76,7 +77,7 @@ $(document).ready(function(){
 	});
 	/** 로그인 입력 버튼 클릭 **/
 	$(document).on("click", "#loginBtn", function(){
-		alert("aa");
+
 		let email = $("#email").val();
 		let password = $("#password").val();
 		let data1 = {"email":email, "password":password};
@@ -86,10 +87,12 @@ $(document).ready(function(){
 			data: JSON.stringify(data1),
 			contentType : "application/json;charset=UTF-8",
 			success : function(result){
-				location.href="/smtr"
+				$(".loginForm").data("kendoDialog").close();
+				window.location.href="/smtr";
 			},
 			error : function(request, status, error){
 				alert("code:"+request.status+"\n"+"message:"+request.responseText+"\n"+"error:"+error);
+				alert("로그인 실패");
 			}
 		});
 	});

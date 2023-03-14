@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="chef">
+	
+	<select id="popularChef" parameterType="int" resultType="Map">
+		select rownum, memNo, email, password, nickName, photoPath, su, kind from 
+			(select * from member order by su desc) where rownum between 1 and #{count}
+	</select>
+	
+	<select id="chefCount" resultType="int">
+		select count(*) from member
+	</select>
+</mapper>

@@ -12,7 +12,7 @@ import com.sy.smtr.HomeController;
 @Controller
 public class MainController {
 	
-	private static final Logger logger = LoggerFactory.getLogger(HomeController.class);
+	private static final Logger logger = LoggerFactory.getLogger(MainController.class);
 	
 	@RequestMapping(value="/")
 	public String home(HttpServletRequest request) {

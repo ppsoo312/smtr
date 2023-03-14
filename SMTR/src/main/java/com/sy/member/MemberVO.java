@@ -7,15 +7,17 @@ public class MemberVO {
 	private String password;
 	private String nickName;
 	private String photoPath;
+	private int su;
 	private int kind;
 	
 	public MemberVO() {}
-	public MemberVO(int memNo, String email, String password, String nickName, String photoPath, int kind) {
+	public MemberVO(int memNo, String email, String password, String nickName, String photoPath, int su, int kind) {
 		this.memNo = memNo;
 		this.email = email;
 		this.password = password;
 		this.nickName = nickName;
 		this.photoPath = photoPath;
+		this.su = su;
 		this.kind = kind;
 	}
 	public int getMemNo() {
@@ -53,6 +55,12 @@ public class MemberVO {
 	}
 	public void setKind(int kind) {
 		this.kind = kind;
+	}
+	public int getSu() {
+		return su;
+	}
+	public void setSu(int su) {
+		this.su = su;
 	}
 	
 }

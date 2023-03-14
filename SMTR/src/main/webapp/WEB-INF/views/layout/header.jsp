@@ -1,11 +1,21 @@
+<%@page import="com.sy.member.MemberVO"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<%
+	MemberVO vo = (MemberVO)session.getAttribute("login");
+	String nickName = null;
+	if(vo != null){
+		nickName = vo.getNickName();	
+	}
+
+%>
+
 <!-- navigation -->
 <header class="navigation fixed-top">
   <div class="container">
     <nav class="navbar navbar-expand-lg navbar-white">
-      <a class="navbar-brand order-1" href="index.html" style="padding: 0;height: 100%">
-        <img class="img-fluid" width="100px" src="${pageContext.request.contextPath }/resources/images/smtr_mainRogo.png"
-          alt="Reader | Hugo Personal Blog Template">
+      <a class="navbar-brand order-1" href="/smtr" style="padding: 0;height: 100%">
+        <img class="img-fluid" width="100px" src="${pageContext.request.contextPath }/resources/images/smtr_mainRogo.png">
       </a>
       <div class="cen collapse navbar-collapse text-center order-lg-2 order-3" id="navigation" style="padding-left: 100px;">
         <ul class="navbar-nav mx-auto">
@@ -89,9 +99,16 @@
           </li>
         </ul>
        <div class="loginDiv">
-			<%-- <button class="loginBtn" type="button" onclick="location.href='${pageContext.request.contextPath}/member/myPage'"><img class="btnImg" src="${pageContext.request.contextPath }/resources/images/loginChef.png"></button>
-			<button class="loginBtn" type="button" onclick="location.href='${pageContext.request.contextPath}/logout/logout'"><img class="btnImg" src="${pageContext.request.contextPath }/resources/images/logoutBtn.png"></button> --%>
-			<button class="loginBtn" type="button" onclick="location.href='${pageContext.request.contextPath}/login/loginForm'"><img class="btnImg" src="${pageContext.request.contextPath }/resources/images/loginBtn.png"></button>		
+       		<c:choose>
+       			<c:when test="<%=nickName == null %>">
+					<%=nickName %>
+					<button class="loginFormBtn" id="loginFormBtn" type="button" onclick="location.href='${pageContext.request.contextPath}/login/loginForm'"><img class="btnImg" src="${pageContext.request.contextPath }/resources/images/loginBtn.png"></button>		       			
+       			</c:when>
+       			<c:otherwise>
+					<button class="loginBtn" type="button" onclick="location.href='${pageContext.request.contextPath}/member/myPage'"><img class="btnImg1" src="${pageContext.request.contextPath }/resources/images/loginChef.png"></button>
+					<button class="loginBtn" type="button" onclick="location.href='${pageContext.request.contextPath}/logout/logout'"><img class="btnImg" src="${pageContext.request.contextPath }/resources/images/logoutBtn.png"></button>     			
+       			</c:otherwise>
+       		</c:choose>
        </div>      
       </div>
 

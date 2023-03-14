@@ -4,6 +4,7 @@
 <html lang="en-us"><head>
   <meta charset="utf-8">
   <title>Reader | Hugo Personal Blog Template</title>
+  <base href="/" />
 </head>
   <%@ include file="layout/property.jsp" %>
 <body>
