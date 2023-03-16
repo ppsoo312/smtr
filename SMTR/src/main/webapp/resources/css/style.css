@@ -96,6 +96,13 @@ h6, .h6 {
   color: #4FD675;
   border-color: #4FD675;
 }
+.searchInsert {
+	width:1000px;
+	height: 500px;
+	padding-top: 105px;
+	background-image: url("https://i.ibb.co/YdLGFY6/ff.png");
+	
+}
 .btn-outline-primary:active, .btn-outline-primary:hover, .btn-outline-primary.focus, .btn-outline-primary.active {
   background: #4FD675 !important;
   border-color: #4FD675 !important;
@@ -106,7 +113,19 @@ body {
   background-color: #fff;
   overflow-x: hidden;
 }
-
+.insertList {
+	width: 43%;
+	height: 40%;
+	padding-top: 30px;
+	padding-left: 30px;
+	border: 1px solid black;
+	margin-left: 50%;
+	
+	
+}
+.totalSearch {
+	margin-left: 50%;
+}
 ::-moz-selection {
   background: #2ec458;
   color: #fff;
@@ -355,7 +374,7 @@ mark {
 }
 .cen {
 	position: relative;
-    top: 50px;
+    top: 20px;
 }
 .loginFormBtn {
 	background:none;
@@ -374,6 +393,12 @@ mark {
 	border: none;
 	width: 80px;
 	height: 80px;
+	float: right;
+}
+.loginChef {
+	background:none;
+	border: none;
+	
 }
 .myPageBtn {
 	background:none;
@@ -386,6 +411,9 @@ mark {
 }
 .btnImg {
 	width: 150px;
+}
+.btnImg2 {
+	width: 100px;
 }
 .navbar {
   height: 100px;
@@ -450,10 +478,10 @@ mark {
 }
 .loginDiv {
 	position: relative;
-    top: -40px;
+   /*  top: -20px;
 	padding-left: 100px;
 	padding-top: 20px;
- 	padding-bottom: 20px;
+ 	padding-bottom: 20px; */
 	float: right;
 }
 .search-bar input {

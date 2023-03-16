@@ -12,4 +12,20 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 	<select id="chefCount" resultType="int">
 		select count(*) from member
 	</select>
+	<!-- 종류별 전체 검색 -->
+	<select id="ganre" resultType="Map">
+		select * from ganre
+	</select>
+	<!-- 상황별 전체 검색 -->
+	<select id="situational" resultType="Map">
+		select * from situational
+	</select>
+	<!-- 재료별 전체 검색 -->
+	<select id="ingredient" resultType="Map">
+		select * from ingredient
+	</select>
+	<!-- 재료별 전체 검색 -->
+	<select id="cookery" resultType="Map">
+		select * from cookery
+	</select>
 </mapper>

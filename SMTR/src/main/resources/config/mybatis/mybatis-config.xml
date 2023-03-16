@@ -10,6 +10,10 @@
 	
 	<typeAliases>
 		<typeAlias type="com.sy.member.MemberVO" alias="member"/>
+		<typeAlias type="com.sy.vo.SituationalVO" alias="situational"/>
+		<typeAlias type="com.sy.vo.IngredientVO" alias="ingredient"/>
+		<typeAlias type="com.sy.vo.GanreVO" alias="ganre"/>
+		<typeAlias type="com.sy.vo.CookeryVO" alias="cookery"/>
 		
 	</typeAliases>
 	

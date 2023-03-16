@@ -25,4 +25,9 @@ public class ChefServiceImpl implements ChefService{
 	public int chefCount() {
 		return chefDao.chefCount();
 	}
+	
+	@Override
+	public List<Map<String, Object>> searchRe(int sel) {
+		return chefDao.searchRe(sel);
+	}
 }

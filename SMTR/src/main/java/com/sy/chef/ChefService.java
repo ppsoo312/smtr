@@ -10,4 +10,6 @@ public interface ChefService {
 	public List<Map<String, Object>> popularChef(int count);
 	// 전체 쉐프 수
 	public int chefCount();
+	// 상황, 재료, 종류, 방법 찾으로가기
+	public List<Map<String, Object>> searchRe(int sel);
 }

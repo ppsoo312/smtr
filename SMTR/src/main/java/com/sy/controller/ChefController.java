@@ -1,5 +1,6 @@
 package com.sy.controller;
 
+
 import java.util.List;
 import java.util.Map;
 
@@ -39,6 +40,15 @@ public class ChefController {
 		}
 		
 
+		return vo;
+	}
+	
+	@ResponseBody
+	@RequestMapping("/chef/searchRe")
+	public List<Map<String, Object>> searchRe(@RequestParam int sel){
+		List<Map<String, Object>> vo = null;
+		vo = chefService.searchRe(sel);
+		
 		return vo;
 	}
 }

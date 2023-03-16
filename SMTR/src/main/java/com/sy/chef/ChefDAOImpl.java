@@ -26,4 +26,17 @@ public class ChefDAOImpl implements ChefDAO{
 	public int chefCount() {
 		return sqlSession.selectOne("chefCount");
 	}
+	@Override
+	public List<Map<String, Object>> searchRe(int sel) {
+		
+		if(sel == 1) {
+			return sqlSession.selectList("chef.ganre");
+		} else if(sel == 2) {
+			return sqlSession.selectList("chef.situational");
+		} else if(sel == 3) {
+			return sqlSession.selectList("chef.ingredient");
+		} else {
+			return sqlSession.selectList("chef.cookery");
+		}
+	}
 }

@@ -8,5 +8,6 @@ import com.sy.member.MemberVO;
 public interface ChefDAO {
 	public List<Map<String, Object>> popularChef(int count);
 	public int chefCount();
+	public List<Map<String, Object>> searchRe(int sel);
 
 }

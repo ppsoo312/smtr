@@ -45,13 +45,13 @@ public class LoginController {
 		int no = memberService.join(mvo);
 	}
 	
-//	@RequestMapping("/logout/logout")
-//	public String logout(HttpSession session) {
-//		
-//		session.removeAttribute("login");
-//		
-//		return "redirect:/";
-//	}
+	@RequestMapping("/logout/logout")
+	public String logout(HttpSession session) {
+		
+		session.removeAttribute("login");
+		
+		return "redirect:/";
+	}
 	
 	
 }
